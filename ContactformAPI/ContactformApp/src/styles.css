@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+.form-group label {
+    color: grey;
+  }
+  
+  .form-group input {
+    font-weight: 550;
+  }
+  
+  .form-group input::placeholder {
+    color: #c0bdbd;
+    font-weight: 400;
+  }
+  
+  thead th{
+    font-weight: 400;
+  }
+  
+  table tbody tr:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /*for invalid form controls*/
+  input.invalid {
+    border-color: red;
+  }
