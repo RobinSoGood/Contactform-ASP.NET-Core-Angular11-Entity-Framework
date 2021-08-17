@@ -10,7 +10,7 @@ export class ContactformDetailService {
 
   constructor(private http: HttpClient) { }
 
-  readonly baseURL = 'http://abobus-001-site1.itempurl.com/api/ContactformDb'
+  readonly baseURL = 'http://localhost:61236/api/ContactformDb'
   formData: ContactformDetail = new ContactformDetail();
   list: ContactformDetail[];
 

@@ -1,64 +1,64 @@
-<form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)">
-    <input type="hidden" name="contactformDetailId" [value]="service.formData.contactformDetailId" />
-    <div class="form-group">
-        <label>Имя</label>
-        <input class="form-control form-control-lg" placeholder="Введите имя" name="name"
-            #name="ngModel" [(ngModel)]="service.formData.name"
-            required [class.invalid]="name.invalid && name.touched">
-        <div *ngIf="name.errors && name.touched">
-            <span class="text-danger" *ngIf="name.errors.required"><em>Поле "Имя" обязательно</em></span>
-        </div>
+<form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)" >
+  <input type="hidden" name="contactformDetailId" [value]="service.formData.contactformDetailId" />
+  <div class="form-group">
+    <label>Имя</label>
+    <input class="form-control form-control-lg" placeholder="Введите имя" name="name"
+           #name="ngModel" [(ngModel)]="service.formData.name"
+           required [class.invalid]="name.invalid && name.touched">
+    <div *ngIf="name.errors && name.touched">
+      <span class="text-danger" *ngIf="name.errors.required"><em>Поле "Имя" обязательно</em></span>
     </div>
-    <div class="form-group">
-        <label>Email</label>
-        <input class="form-control form-control-lg" placeholder="Введите свою почту" name="email"
-            #email="ngModel" [(ngModel)]="service.formData.email"
-            required maxlength="59" minlength="1" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" [class.invalid]="email.invalid && email.touched">
-        <div *ngIf="email.errors && (email.invalid && email.touched)">
-            <span class="text-danger" *ngIf="email.errors.required"><em>Поле "Электронная почта" обязательно</em></span>
-            <span class="text-danger" *ngIf="email.errors.pattern"><em>Некорректная электронная почта</em></span>
-        </div>
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input class="form-control form-control-lg" placeholder="Введите свою почту" name="email"
+           #email="ngModel" [(ngModel)]="service.formData.email"
+           required maxlength="59" minlength="1" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" [class.invalid]="email.invalid && email.touched">
+    <div *ngIf="email.errors && (email.invalid && email.touched)">
+      <span class="text-danger" *ngIf="email.errors.required"><em>Поле "Электронная почта" обязательно</em></span>
+      <span class="text-danger" *ngIf="email.errors.pattern"><em>Некорректная электронная почта</em></span>
     </div>
-    <div class="form-group">
-        <label>Телефон</label>
-        <input class="form-control form-control-lg" placeholder="(000) 000-00-00" name="telephone"
-            #telephone="ngModel" [(ngModel)]="service.formData.telephone"
-            required maxlength="20" minlength="1" [class.invalid]="telephone.invalid && telephone.touched"mask="(000)-000-00-00" prefix="+7" pattern="^((\\+7-?)|0)?[0-9]{10}$">
-        <div *ngIf="telephone.errors && (telephone.invalid && telephone.touched)">
-            <span class="text-danger" *ngIf="telephone.errors.required"><em>Поле "Телефон" обязательно</em></span>
-            <span class="text-danger" *ngIf="telephone.errors.pattern"><em>Некорректный номер телефона</em></span>
-        </div>
+  </div>
+  <div class="form-group">
+    <label>Телефон</label>
+    <input class="form-control form-control-lg" placeholder="(000) 000-00-00" name="telephone"
+           #telephone="ngModel" [(ngModel)]="service.formData.telephone"
+           required maxlength="20" minlength="1" [class.invalid]="telephone.invalid && telephone.touched" mask="(000)-000-00-00" prefix="+7" pattern="^((\\+7-?)|0)?[0-9]{10}$">
+    <div *ngIf="telephone.errors && (telephone.invalid && telephone.touched)">
+      <span class="text-danger" *ngIf="telephone.errors.required"><em>Поле "Телефон" обязательно</em></span>
+      <span class="text-danger" *ngIf="telephone.errors.pattern"><em>Некорректный номер телефона</em></span>
     </div>
-    
-    <div class="mb-4">
-        <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"
-        #message="ngModel" [(ngModel)]="service.formData.message"
-        required maxlength="500" minlength="1" [class.is-invalid]="message.invalid && message.touched"></textarea>
-        <div *ngIf="message.errors && message.touched">
-            <span class="text-danger" *ngIf="message.errors.required"><em>Поле "Сообщение" обязательно</em></span>
-        </div>
+  </div>
+
+  <div class="mb-4">
+    <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"
+              #message="ngModel" [(ngModel)]="service.formData.message"
+              required maxlength="500" minlength="1" [class.is-invalid]="message.invalid && message.touched"></textarea>
+    <div *ngIf="message.errors && message.touched">
+      <span class="text-danger" *ngIf="message.errors.required"><em>Поле "Сообщение" обязательно</em></span>
     </div>
-    <hr>
-    <p>
+  </div>
+  <hr>
+  <p>
     Выберите тему
-    </p>
-    <div class="mb-4">
-        <ng-select [items]="simpleItems" name="theme" #theme="ngModel"
-            [(ngModel)]="service.formData.theme" required [class.is-invalid]="theme.invalid && theme.touched">
-        </ng-select>
-        <div *ngIf="theme.errors && theme.touched">
-            <span class="text-danger" *ngIf="theme.errors.required"><em>Поле "Тема" обязательно</em></span>
-        </div>
+  </p>
+  <div class="mb-4">
+    <ng-select [items]="simpleItems" name="theme" #theme="ngModel"
+               [(ngModel)]="service.formData.theme" required [class.is-invalid]="theme.invalid && theme.touched">
+    </ng-select>
+    <div *ngIf="theme.errors && theme.touched">
+      <span class="text-danger" *ngIf="theme.errors.required"><em>Поле "Тема" обязательно</em></span>
     </div>
-    <re-captcha #captchaRef="reCaptcha"
+  </div>
+  <re-captcha #captchaRef="reCaptcha"
               (resolved)="resolved($event)"
               (error)="onError($event)"
               errorMode="handled"
               [siteKey]="siteKey"
               size="invisible">
-    </re-captcha>
-    <div class="form-group white-space: pre">
-        <button (click)="captchaRef.execute()" class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">Отправить</button>
-    </div>
+  </re-captcha>
+  <div class="form-group">
+    <button (click)="captchaRef.execute()" class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">Отправить</button>
+  </div>
 </form>

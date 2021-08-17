@@ -32,6 +32,7 @@ export class ContactformDetailFormComponent implements OnInit {
     this.captchaResponse += `ERROR; error details (if any) have been logged to console\n`;
     console.log(`reCAPTCHA error encountered; details:`, errorDetails);
   }
+ 
 
 
   simpleItems : string[] = [];
@@ -39,6 +40,7 @@ export class ContactformDetailFormComponent implements OnInit {
 
   ngOnInit() {  
     this.simpleItems = ['Тех.Поддержка', 'Продажи', 'Другое'];
+    
   }
 
   onSubmit(form: NgForm) {
