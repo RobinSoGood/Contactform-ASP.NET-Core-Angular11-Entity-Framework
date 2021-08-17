@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YlfYpee4hgJAY2kIs0xm+BNK3tIzBRE4wqdHsFg+NOZNuOnsCKWv1PfP7QNU4TPwL6CpR/+W8mA4LyNwbDGO5Q==",
+  "dgSpecHash": "K0kAXh0beBu2eJaFtB+kEuEK4LveaG3zc9df1H78Upb0XohdJ1sNU4pB3K5US9aUgAHUN1Qm0okzyqlAYzM1Uw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\FeedbackApp-main\\Asp.Net-Core-5.0-Web-API-CRUD-with-Angular-11-main\\ContactformAPI\\ContactformAPI\\ContactformAPI.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\Contactform\\ContactformAPI\\ContactformAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.0\\microsoft.aspnetcore.authentication.jwtbearer.5.0.0.nupkg.sha512",
@@ -56,6 +56,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.typescript.msbuild\\4.3.5\\microsoft.typescript.msbuild.4.3.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\5.0.0\\microsoft.visualstudio.web.codegeneration.5.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\5.0.0\\microsoft.visualstudio.web.codegeneration.contracts.5.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\5.0.0\\microsoft.visualstudio.web.codegeneration.core.5.0.0.nupkg.sha512",

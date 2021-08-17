@@ -37,8 +37,8 @@ export class ContactformDetailFormComponent implements OnInit {
   simpleItems : string[] = [];
 
 
-  ngOnInit() {
-      this.simpleItems = ['Тех.Поддержка', 'Продажи', 'Другое'];
+  ngOnInit() {  
+    this.simpleItems = ['Тех.Поддержка', 'Продажи', 'Другое'];
   }
 
   onSubmit(form: NgForm) {
